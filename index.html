@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -36,11 +37,59 @@
                 <input type="text" placeholder="Search">
             </div>
 
-            <div class="nav-user-icon online">
+            <div class="nav-user-icon online" onclick="settingsMenuToggle()">
                 <img src="images/profile-pic.png">
             </div>
 
         </div>
+
+        <!-- DROPDOWN MENU -->
+        <div class="settings-menu">
+
+            <div id="dark-btn">
+                <span></span>
+            </div>
+
+            <div class="settings-menu-inner">
+
+                <div class="user-profile">
+                    <img src="images/profile-pic.png">
+                    <div>
+                        <p>Viraj kedar</p>
+                        <a href="#">See Your Profile</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="images/feedback.png">
+                    <div>
+                        <p>Give Feedback</p>
+                        <a href="#">Help us to improve the new design</a>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="settings-links">
+                    <img src="images/setting.png" class="settings-icon">
+                    <a href="#">Settings & Privacy <img src="images/arrow.png" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="images/help.png" class="settings-icon">
+                    <a href="#">Help & Support <img src="images/arrow.png" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="images/display.png" class="settings-icon">
+                    <a href="#">Display & Accessibility <img src="images/arrow.png" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="images/logout.png" class="settings-icon">
+                    <a href="#">Logout <img src="images/arrow.png" width="10px"></a>
+                </div>
+
+            </div>
+
+        </div>
+
 
     </nav>
 
@@ -135,7 +184,9 @@
                     <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
                 </div>
 
-                <p class="post-text">Subscribe <span>@Easy Tutorials</span> YouTube Channel to watch more videos on Website Development and UI Design. <a href="#">#EasyTutorials</a> <a href="#">#YouTubeChannel</a></p>
+                <p class="post-text">Subscribe <span>@Easy Tutorials</span> YouTube Channel to watch more videos on
+                    Website Development and UI Design. <a href="#">#EasyTutorials</a> <a href="#">#YouTubeChannel</a>
+                </p>
                 <img src="images/feed-image-1.png" class="post-img">
 
                 <div class="post-row">
@@ -149,7 +200,7 @@
                     <div class="post-profile-icon">
                         <img src="images/profile-pic.png"><i class="fa-solid fa-caret-down"></i>
                     </div>
-                    
+
                 </div>
 
             </div>
@@ -169,7 +220,9 @@
                     <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
                 </div>
 
-                <p class="post-text">Subscribe <span>@Easy Tutorials</span> YouTube Channel to watch more videos on Website Development and UI Design. <a href="#">#EasyTutorials</a> <a href="#">#YouTubeChannel</a></p>
+                <p class="post-text">Subscribe <span>@Easy Tutorials</span> YouTube Channel to watch more videos on
+                    Website Development and UI Design. <a href="#">#EasyTutorials</a> <a href="#">#YouTubeChannel</a>
+                </p>
                 <img src="images/feed-image-2.png" class="post-img">
 
                 <div class="post-row">
@@ -203,7 +256,9 @@
                     <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
                 </div>
 
-                <p class="post-text">Subscribe <span>@Easy Tutorials</span> YouTube Channel to watch more videos on Website Development and UI Design. <a href="#">#EasyTutorials</a> <a href="#">#YouTubeChannel</a></p>
+                <p class="post-text">Subscribe <span>@Easy Tutorials</span> YouTube Channel to watch more videos on
+                    Website Development and UI Design. <a href="#">#EasyTutorials</a> <a href="#">#YouTubeChannel</a>
+                </p>
                 <img src="images/feed-image-3.png" class="post-img">
 
                 <div class="post-row">
@@ -237,7 +292,9 @@
                     <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
                 </div>
 
-                <p class="post-text">Subscribe <span>@Easy Tutorials</span> YouTube Channel to watch more videos on Website Development and UI Design. <a href="#">#EasyTutorials</a> <a href="#">#YouTubeChannel</a></p>
+                <p class="post-text">Subscribe <span>@Easy Tutorials</span> YouTube Channel to watch more videos on
+                    Website Development and UI Design. <a href="#">#EasyTutorials</a> <a href="#">#YouTubeChannel</a>
+                </p>
                 <img src="images/feed-image-4.png" class="post-img">
 
                 <div class="post-row">
@@ -271,7 +328,9 @@
                     <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
                 </div>
 
-                <p class="post-text">Subscribe <span>@Easy Tutorials</span> YouTube Channel to watch more videos on Website Development and UI Design. <a href="#">#EasyTutorials</a> <a href="#">#YouTubeChannel</a></p>
+                <p class="post-text">Subscribe <span>@Easy Tutorials</span> YouTube Channel to watch more videos on
+                    Website Development and UI Design. <a href="#">#EasyTutorials</a> <a href="#">#YouTubeChannel</a>
+                </p>
                 <img src="images/feed-image-5.png" class="post-img">
 
                 <div class="post-row">
@@ -362,6 +421,9 @@
         <p>Copyright Digvijay Dudhnale and Easy Tutorials YT Channel</p>
     </div>
 
+
+    <!-- SCRIPT -->
+    <!-- <script src="script.js"></script> -->
 </body>
 
 </html>
